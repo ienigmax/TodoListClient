@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'to-do-list-client',
+    modulePrefix: 'todo-list-client',
     environment,
     rootURL: '/',
     locationType: 'auto',

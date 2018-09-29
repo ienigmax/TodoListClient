@@ -20,12 +20,9 @@ module.exports = {
     // node files
     {
       files: [
-        '.template-lintrc.js',
-        'ember-cli-build.js',
         'testem.js',
-        'blueprints/*/index.js',
-        'config/**/*.js',
-        'lib/*/index.js'
+        'ember-cli-build.js',
+        'config/**/*.js'
       ],
       parserOptions: {
         sourceType: 'script',
@@ -34,6 +31,15 @@ module.exports = {
       env: {
         browser: false,
         node: true
+      }
+    },
+
+    // test files
+    {
+      files: ['tests/**/*.js'],
+      excludedFiles: ['tests/dummy/**/*.js'],
+      env: {
+        embertest: true
       }
     }
   ]

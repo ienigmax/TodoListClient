@@ -1,4 +1,4 @@
-# to-do-list-client
+# todo-list-client
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
@@ -15,7 +15,7 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd to-do-list-client`
+* `cd todo-list-client`
 * `npm install`
 
 ## Running / Development
@@ -32,12 +32,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 * `ember test`
 * `ember test --server`
-
-### Linting
-
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
 
 ### Building
 
