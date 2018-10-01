@@ -1,1 +1,20 @@
-{{outlet}}
+<div class="container">
+  <div class="menu">
+    {{#link-to "index"}}
+      <h1>
+        <em>Tasks</em>
+      </h1>
+    {{/link-to}}
+    <div class="app-links">
+      {{#link-to "about" class="menu-about"}}
+        About
+      {{/link-to}}
+      {{#link-to "tasklist" class="menu-about"}}
+        Tasks
+      {{/link-to}}
+    </div>
+  </div>
+  <div class="body">
+    {{outlet}}
+  </div>
+</div>
