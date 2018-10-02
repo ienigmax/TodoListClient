@@ -25,3 +25,8 @@
 .listing-task:nth-child(even){
   background-color: #fff2bd;
 }
+
+.body {
+  padding-top: 15px;
+  /*margin-top: 15px;*/
+}
