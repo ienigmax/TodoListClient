@@ -17,7 +17,7 @@ export default Route.extend({
        .then( (response) => {
          let i = 1;
          (response.data).forEach((elem) => {
-           if(elem.status == '1'){
+           if(elem.status !== '1'){
              elem.checked_flag = 'checked';
            } else {
              elem.checked_flag = '';
