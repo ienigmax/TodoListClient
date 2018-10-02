@@ -7,26 +7,44 @@
 
 }
 
-.tasks-header h3{
+.tasks-header{
   display: inline;
   background-color: orange;
   width: 100%;
 }
+
+
 
 .header-text {
   display: inline;
   width: 100%;
 }
 
-.listing-task:nth-child(odd){
-  background-color: #ffdf94;
+.task-elem:nth-child(odd){
+  background-color: rgba(255, 215, 143, 0.06);
+  border-bottom: 1px solid black;
+  padding: 8px
 }
 
-.listing-task:nth-child(even){
+.task-elem:nth-child(even){
   background-color: #fff2bd;
+  border-bottom: 1px solid black;
+  padding: 8px
 }
 
 .body {
   padding-top: 15px;
   /*margin-top: 15px;*/
+}
+
+.task-rem {
+  content: 'x';
+  color: #000;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.task-rem:hover {
+  color: #666;
+  cursor: pointer;
 }
