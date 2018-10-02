@@ -13,7 +13,7 @@ Router.map(function() {
   this.route('actions', function() {
     this.route('add');
     this.route('remove', {path: 'remove/:uuid'});
-    this.route('toggle');
+    this.route('toggle', {path: 'toggle/:uuid/:status'});
   });
 });
 
