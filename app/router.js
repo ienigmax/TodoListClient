@@ -9,6 +9,12 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('tasklist');
   this.route('about');
+
+  this.route('actions', function() {
+    this.route('add');
+    this.route('remove', {path: 'remove/:uuid'});
+    this.route('toggle');
+  });
 });
 
 export default Router;
