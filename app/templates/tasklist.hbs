@@ -16,9 +16,9 @@
 
       {{#each model as |task index|}}
         <article id="task_{{task.id}}" class="task-elem" data-content="{{task.content}}" data-uuid="task_{{task.uuid}}" >
-          <input type="checkbox" class="task-status-chkbx toggle_{{task.status}}" checked="{{task.checked_flag}}" >
+          <input type="checkbox" class="task-status-chkbx toggle_{{task.status}}" checked="{{task.checked_flag}}" {{action "toggleStatus" task.uuid task.status }} >
           <label class="toggle_{{task.status}}">{{index}}. {{task.title}}</label>
-          <span data-uuid="{{task.uuid}}" data-status="{{task.status}}" class="task-rem" >X</span>
+          <button data-uuid="{{task.uuid}}" data-status="{{task.status}}" class="task-rem" {{action "removeOldTask" task.uuid }} >X</button>
         </article>
       {{/each}}
       {{outlet}}
