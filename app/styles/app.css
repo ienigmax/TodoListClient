@@ -1,0 +1,27 @@
+.toggle_0 {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.toggle_1 {
+
+}
+
+.tasks-header h3{
+  display: inline;
+  background-color: orange;
+  width: 100%;
+}
+
+.header-text {
+  display: inline;
+  width: 100%;
+}
+
+.listing-task:nth-child(odd){
+  background-color: #ffdf94;
+}
+
+.listing-task:nth-child(even){
+  background-color: #fff2bd;
+}
