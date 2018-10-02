@@ -15,17 +15,30 @@ export default Route.extend({
         credentials: "same-origin"
       }).then((response) => response.json())
        .then( (response) => {
-         let i = 1;
+
          (response.data).forEach((elem) => {
            if(elem.status !== '1'){
              elem.checked_flag = 'checked';
            } else {
              elem.checked_flag = '';
            }
-          i++;
+
          });
          return (response.data);
        })
        .catch(error => console.error(error));
+  },
+  actions: {
+    removeOldTask(uuid){
+      this.transitionTo('/actions/remove/' + uuid);
+    },
+    toggleStatus(uuid, status){
+      if(status == '0'){
+        status = 'on'
+      } else if(status == '1') {
+        status = 'off'
+      }
+      this.transitionTo('/actions/toggle/' + uuid + '/' + status);
+    }
   }
 });
