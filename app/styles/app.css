@@ -5,7 +5,13 @@ body {
 .tasks-list-container {
   width: 400px;
   overflow-y: auto;
-  height: 400px;
+  height: 450px;
+  background-color: #d3d3d3;
+}
+
+.summery table {
+  width: 400px;
+  border-bottom: 2px solid #d3d3d3;
 }
 
 .tasks-header-container {
@@ -19,7 +25,7 @@ body {
 
 .span-btn {
   padding: 12px 5px 12px 5px;
-  background-image: linear-gradient(#fff, #888);
+  background-image: linear-gradient(#fff, #9f9f9f);
 }
 
 .circle-btn {
@@ -31,8 +37,10 @@ body {
 }
 
 .tasks-header{
+  position: relative;
   padding-left: 12px;
-  background-image: linear-gradient(#ffe12f, #e17103)
+  background-image: linear-gradient(#ffe12f, #e17103);
+  box-shadow: 0px 5px 5px grey;
 }
 
 .tasks-header h3{
