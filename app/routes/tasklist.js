@@ -22,13 +22,9 @@ export default Route.extend({
            } else {
              elem.checked_flag = '';
            }
-
-           if(i == ((response.data).length) ){
-
-
-           }
           i++;
-         });return (response.data);
+         });
+         return (response.data);
        })
        .catch(error => console.error(error));
   }
