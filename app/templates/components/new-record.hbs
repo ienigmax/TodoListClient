@@ -1,0 +1,14 @@
+{{!--yield--}}
+<div class="container-form">
+  <div cass="task-new-form">
+    <form id="new-task" class="new-record">
+      <input id="title-inp" class="task-inp-field" type="text" placeholder="title" />
+      <textarea id="content-inp" class="task-inp-field" placeholder="content" />
+      <input type="button" value="Add" class="submit-btn" id="add-task" {{action "addNewTask" }} />
+      <input type="button" value="Reset" class="submit-btn" id="reset-btn" {{action "resetFields" }}/>
+      <div class="err-log">
+        <label id="err-label"></label>
+      </div>
+    </form>
+  </div>
+</div>
