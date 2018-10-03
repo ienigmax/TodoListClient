@@ -14,6 +14,7 @@ Router.map(function() {
     this.route('add', {path: 'add/:title/:content'});
     this.route('remove', {path: 'remove/:uuid'});
     this.route('toggle', {path: 'toggle/:uuid/:status'});
+    this.route('edit', {path: 'edit/:uuid/:title/:content'});
   });
 });
 
