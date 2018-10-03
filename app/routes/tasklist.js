@@ -29,6 +29,9 @@ export default Route.extend({
        .catch(error => console.error(error));
   },
   actions: {
+    toggle_add_task() {
+      $('.container-form').toggle();
+    },
     removeOldTask(uuid){
       this.transitionTo('/actions/remove/' + uuid);
     },
