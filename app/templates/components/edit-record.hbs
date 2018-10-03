@@ -1,14 +1,14 @@
 {{!--yield--}}
 <div class="container-form edit-rec">
-  <div cass="task-new-form">
+  <div class="task-new-form">
     <form id="new-task" class="new-record">
-      <input id="title-inp-edit" class="task-inp-field" type="text" value="{{title}}" />
-      <textarea id="content-inp-edit" class="task-inp-field" value="{{content}}" />
-      <input id="tsk-uuid-hidden" type="hidden" value="{{uuid}}">
-      <input type="button" value="Edit" class="submit-btn" id="edit-task" {{action "addNewTask" }} />
+      <input id="title-inp-edit" class="task-inp-field" type="text" value="" />
+      <textarea id="content-inp-edit" class="task-inp-field" value="" />
+      <input id="tsk-uuid-hidden" type="hidden" value="">
+      <input type="button" value="Edit" class="submit-btn" id="edit-task" {{action "editTask" }} />
       <input type="button" value="Reset" class="submit-btn" id="reset-btn" {{action "resetFields" }}/>
       <div class="err-log">
-        <label id="err-label"></label>
+        <label id="err-label-edit"></label>
       </div>
     </form>
   </div>
