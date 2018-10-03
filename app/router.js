@@ -11,7 +11,7 @@ Router.map(function() {
   this.route('about');
 
   this.route('actions', function() {
-    this.route('add');
+    this.route('add', {path: 'add/:title/:content'});
     this.route('remove', {path: 'remove/:uuid'});
     this.route('toggle', {path: 'toggle/:uuid/:status'});
   });
