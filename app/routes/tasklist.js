@@ -42,7 +42,7 @@ export default Route.extend({
       $('#title-inp-edit').val(title);
       $('#content-inp-edit').val(content);
       $('#tsk-uuid-hidden').val(uuid);
-      
+
       $('.container-form.new-rec').hide();
     },
     removeOldTask(uuid){
