@@ -30,7 +30,20 @@ export default Route.extend({
   },
   actions: {
     toggle_add_task() {
-      $('.container-form').toggle();
+      $('.container-form.new-rec').toggle();
+      $('.container-form.edit-rec').hide();
+    },
+    toggle_edit_task(uuid, title, content) {
+      if(($('#title-inp-edit').val() === title) && ($('#content-inp-edit').val() === content) && ($('#tsk-uuid-hidden').val() === uuid)){
+        $('.container-form.edit-rec').toggle();
+      } else if(($('#title-inp-edit').val() !== title) || ($('#content-inp-edit').val() !== content) || ($('#tsk-uuid-hidden').val() !== uuid)){
+        $('.container-form.edit-rec').show();
+      }
+      $('#title-inp-edit').val(title);
+      $('#content-inp-edit').val(content);
+      $('#tsk-uuid-hidden').val(uuid);
+      
+      $('.container-form.new-rec').hide();
     },
     removeOldTask(uuid){
       this.transitionTo('/actions/remove/' + uuid);
