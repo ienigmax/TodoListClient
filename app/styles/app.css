@@ -212,3 +212,13 @@ article.tasks-header > a {
   from {top: -300px; opacity: 0}
   to {top: 0; opacity: 1}
 }
+
+.task-content-span {
+  position: relative;
+  font-size: 13px;
+  color: #666666;
+}
+
+.task-text {
+
+}
