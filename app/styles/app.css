@@ -246,6 +246,10 @@ article.tasks-header > a {
     width: 400px;
   }
 
+  .edit-rec {
+    width: 400px;
+  }
+
   .new-record {
     width: 99%;
     border: 2px dotted #d3d3d3;
