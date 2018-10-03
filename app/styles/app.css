@@ -84,3 +84,60 @@ article.tasks-header > a {
   color: #666;
   cursor: pointer;
 }
+
+
+.task-new-form {
+  width: 400px;
+  border: 1px solid black;
+}
+
+.submit-btn {
+  width: 30%;
+  padding: 3px;
+  margin: 5px;
+  background-color: #ffad13;
+  border: 1px solid #ff8346;
+}
+
+.submit-btn:hover {
+  background-color: #ffe414;
+}
+
+#new-task {
+  width: 400px;
+  border: 2px dotted #d3d3d3;
+}
+
+.task-inp-field {
+  display: block;
+  width: 97%;
+  box-sizing: border-box;
+  height: 28px;
+  padding-left: 12px;
+  padding-right: 12px;
+  float: left;
+  margin: 5px 0px 5px 5px;
+}
+
+#content-inp {
+  height: 56px;
+}
+
+.task-status-chkbx {
+
+}
+
+.task-rem {
+  float: right;
+}
+
+.container-form {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
