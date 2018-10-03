@@ -1,5 +1,4 @@
 import Component from '@ember/component';
-// import EmberObject, { computed } from '@ember/object';
 import $ from 'jquery';
 
 export default Component.extend({
