@@ -38,18 +38,18 @@ You will need the following things properly installed on your computer.
 
 _Note: If on mobile, you might need to scroll down to see the add / edit forms on some devices_
 
-####Add task
+#### Add task
 The interface is quite simple, to add a task, click on '+' sign - this will toggle an "add task" form. inside the form there are 2 input fields:
 
-####Title - the header of the task, for example: "meeting with John"
+#### Title - the header of the task, for example: "meeting with John"
 Content - the description or the body of the task, for example "the meeting will take place at... etc."
 Remove task
 To remove a task, click on the 'X' sign in the right side of the task element.
 
-####Toggle finished
+#### Toggle finished
 You can either mark a task as "finished" or "unfinished". To achieve that, click on the checkbox in the lift side of the task element
 
-####Edit task
+#### Edit task
 To edit a task, click on title or the header of the task - this will toggle an "edit task" form. The input element will be populated with the title and the content. You can click on "reset" button, it will clean the input fields.
 
 
