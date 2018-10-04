@@ -2,7 +2,8 @@
 
 ##About
 
-This is a tasks managing application, you can add, remove, edit and mark a task as finished. 
+This is a tasks managing application, you can add, remove, edit and mark a task as finished. The app is responsive to size changes
+and can be freely used on mobile phones as well as all screen sizes. 
 The backend API server can be found here: https://github.com/ienigmax/TodoListServer
 
 ## Prerequisites
