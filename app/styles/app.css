@@ -99,11 +99,6 @@ article.tasks-header > a {
   cursor: pointer;
 }
 
-
-.task-new-form {
-  /*border: 1px solid black;*/
-}
-
 .submit-btn {
   width: 30%;
   padding: 3px;
@@ -152,7 +147,6 @@ article.tasks-header > a {
 }
 
 .task-status-chkbx {
-  /*position: absolute;*/
   display: inline;
   opacity: 0;
   cursor: pointer;
@@ -176,19 +170,18 @@ article.tasks-header > a {
 .chkbx-container input:checked ~ .chkbxInput {
   background-color: #6b6b6b;
 }
-/* Create the checkmark/indicator (hidden when not checked) */
+
 .chkbxInput:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
 .chkbx-container input:checked ~ .chkbxInput:after {
   display: block;
 }
 
-/* Style the checkmark/indicator */
+
 .chkbx-container .chkbxInput:after {
   left: 9px;
   top: 5px;
@@ -202,12 +195,8 @@ article.tasks-header > a {
 }
 
 .container-form {
-  overflow: auto; /* Enable scroll if needed */
-  /*background-color: rgb(0,0,0); !* Fallback color *!*/
-  /*background-color: rgba(0,0,0,0.4); !* Black w/ opacity *!*/
+  overflow: auto;
   display: none;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
 }
 
 .new-record {
@@ -275,7 +264,7 @@ article.tasks-header > a {
   }
 
   .new-record {
-    width: 97.6%;
+    width: 99%;
     border: 2px dotted #d3d3d3;
   }
 
@@ -283,14 +272,12 @@ article.tasks-header > a {
 
 @media only screen and (max-width: 1500px) {
   .new-record {
-    width: 98.3%;
     border: 2px dotted #d3d3d3;
   }
 }
 
 @media only screen and (max-width: 1400px) {
   .new-record {
-    width: 98%;
     border: 2px dotted #d3d3d3;
   }
 }
@@ -314,7 +301,6 @@ article.tasks-header > a {
   }
 
   .new-record {
-    width: 97.5%;
     border: 2px dotted #d3d3d3;
   }
 
@@ -339,7 +325,6 @@ article.tasks-header > a {
   }
 
   .new-record {
-    width: 97.5%;
     border: 2px dotted #d3d3d3;
   }
 }
@@ -363,7 +348,6 @@ article.tasks-header > a {
   }
 
   .new-record {
-    width: 96.6%;
     border: 2px dotted #d3d3d3;
   }
 }
@@ -387,7 +371,6 @@ article.tasks-header > a {
   }
 
   .new-record {
-    width: 96.6%;
     border: 2px dotted #d3d3d3;
   }
 }
