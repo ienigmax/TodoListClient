@@ -7,7 +7,6 @@ export default Component.extend({
     resetFields(){
       $('#title-inp-edit').val('');
       $('#content-inp-edit').val('');
-      $('#tsk-uuid-hidden').val('');
       $('#err-label-edit').text('');
     },
     editTask(){
