@@ -230,6 +230,11 @@ article.tasks-header > a {
   line-height: 30px;
 }
 
+.wait-wheel {
+  margin-left: 150px;
+  margin-top: 100px;
+}
+
 @media only screen and (min-width: 1600px) {
   .new-rec {
     width: 400px;
@@ -243,6 +248,8 @@ article.tasks-header > a {
     width: 99%;
     border: 2px dotted #d3d3d3;
   }
+
+
 }
 
 @media only screen and (max-width: 1600px) {
@@ -268,17 +275,9 @@ article.tasks-header > a {
     border: 2px dotted #d3d3d3;
   }
 
-}
-
-@media only screen and (max-width: 1500px) {
-  .new-record {
-    border: 2px dotted #d3d3d3;
-  }
-}
-
-@media only screen and (max-width: 1400px) {
-  .new-record {
-    border: 2px dotted #d3d3d3;
+  .wait-wheel {
+    margin-left: 17.5%;
+    margin-top: 100px;
   }
 }
 
@@ -327,6 +326,10 @@ article.tasks-header > a {
   .new-record {
     border: 2px dotted #d3d3d3;
   }
+
+  .wait-wheel {
+    margin-left: 21.5%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -349,6 +352,10 @@ article.tasks-header > a {
 
   .new-record {
     border: 2px dotted #d3d3d3;
+  }
+
+  .wait-wheel {
+    margin-left: 25%;
   }
 }
 
@@ -373,6 +380,10 @@ article.tasks-header > a {
   .new-record {
     border: 2px dotted #d3d3d3;
   }
+
+  .wait-wheel {
+    margin-left: 31%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -395,6 +406,10 @@ article.tasks-header > a {
 
   .tasks-list-container {
     height: 430px;
+  }
+
+  .wait-wheel {
+    margin-left: 40%;
   }
 }
 
