@@ -392,6 +392,10 @@ article.tasks-header > a {
   .task-new-form {
     width: 100%;
   }
+
+  .tasks-list-container {
+    height: 430px;
+  }
 }
 
 @keyframes animatetop {
