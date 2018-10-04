@@ -1,16 +1,17 @@
 # todo-list-client
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+##About
+
+This is a tasks managing application, you can add, remove, edit and mark a task as finished
 
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
+* [Node.js](https://nodejs.org/) LTS, version 6 or 8
 * [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
+* [Google Chrome](https://google.com/chrome/) or [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/)
 
 ## Installation
 
@@ -20,32 +21,36 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* `ember serve`
+* `ember serve` or `ember serve --port xxxx` 
+* `npm start`
+* `pm2 start npm -- start` if pm2 manager is installed on the system, then `pm2 log` to see the output
+
+## Task Application (EmberJS):
+
+*	Clone the repository
+*	Run `npm install`
+*	Run `npm install -g ember-cli`
+*	Locate the file `constatns.js`  by default the host is set to http://localhost:8012. Change to the relevant one if needed (host of the API server)
+*	Launch `ember serve` (in case you want to run the app in the background, consider using PM2 or forever)
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
-### Code Generators
+## How To Use
 
-Make use of the many generators for code, try `ember help generate` for more details
+_Note: If on mobile, you might need to scroll down to see the add / edit forms on some devices_
 
-### Running Tests
+####Add task
+The interface is quite simple, to add a task, click on '+' sign - this will toggle an "add task" form. inside the form there are 2 input fields:
 
-* `ember test`
-* `ember test --server`
+####Title - the header of the task, for example: "meeting with John"
+Content - the description or the body of the task, for example "the meeting will take place at... etc."
+Remove task
+To remove a task, click on the 'X' sign in the right side of the task element.
 
-### Building
+####Toggle finished
+You can either mark a task as "finished" or "unfinished". To achieve that, click on the checkbox in the lift side of the task element
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+####Edit task
+To edit a task, click on title or the header of the task - this will toggle an "edit task" form. The input element will be populated with the title and the content. You can click on "reset" button, it will clean the input fields.
 
-### Deploying
 
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+**All rights recieved to iEnigxaX (AlexG) 2018**
