@@ -2,7 +2,8 @@
 
 ##About
 
-This is a tasks managing application, you can add, remove, edit and mark a task as finished
+This is a tasks managing application, you can add, remove, edit and mark a task as finished. 
+The backend API server can be found here: https://github.com/ienigmax/TodoListServer
 
 ## Prerequisites
 
@@ -52,5 +53,3 @@ You can either mark a task as "finished" or "unfinished". To achieve that, click
 #### Edit task
 To edit a task, click on title or the header of the task - this will toggle an "edit task" form. The input element will be populated with the title and the content. You can click on "reset" button, it will clean the input fields.
 
-
-**All rights recieved to iEnigxaX (AlexG) 2018**
